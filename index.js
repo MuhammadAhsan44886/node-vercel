@@ -7,10 +7,9 @@ app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
 })
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
   res.send('Hey this is my API running 🥳')
 })
-
 
 // Export the Express API
 module.exports = app
